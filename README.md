@@ -1,0 +1,2 @@
+# conf
+kickstart hyprland config
