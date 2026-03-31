@@ -174,7 +174,7 @@
         "format-en": "US",
 	"format-Czech": "CZ",
         "format-tr": "Korea",
-        "keyboard-name": "at-translated-set-2-keyboard",  
+       //"keyboard-name": "nuphy-air75-v2-1-keyboard",  
         "on-click": "hyprctl switchxkblayout $SET_KB next"
 },
 
@@ -183,7 +183,7 @@
 	"format-en": "US",
 	"format-Czech": "CZ",
 	"format-tr": "Korea",
-	"keyboard-name": "at-translated-set-2-keyboard",
+//	"keyboard-name": "at-translated-set-2-keyboard",
 	"on-click": "hyprctl switchxkblayout $SET_KB next"
 },
 
@@ -333,13 +333,19 @@
 		"car": "",
 		"default": [
 			"", "", "󰕾",  ""
-		],
-		"ignored-sinks": [
-			"Easy Effects Sink"
-		],
+		]
 	},
+	"ignored-sinks": ["Easy Effects Sink"],
 	"scroll-step": 5.0,
-	"on-click": "$HOME/.config/hypr/scripts/Volume.sh --toggle",
+	/*"on-click": "$HOME/.config/hypr/scripts/Volume.sh --toggle",*/
+	"tooltip": false,
+	"menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/speaker.xml",
+        "menu-actions": {
+	        "speaker": "pactl set-default-sink 413",
+		"airpods": "pactl set-default-sink 979"
+	},
+
 	"on-click-right": "pavucontrol -t 3",
 	"on-scroll-up": "$HOME/.config/hypr/scripts/Volume.sh --inc",
 	"on-scroll-down": "$HOME/.config/hypr/scripts/Volume.sh --dec",
@@ -361,7 +367,13 @@
       "car": "",
       "default": ["", "", ""]
     },
-  "on-click": "pamixer --toggle-mute",
+  /*"on-click": "pamixer --toggle-mute",*/
+   "menu": "on-click",
+    "menu-file": "$HOME/.config/waybar/speaker.xml",
+    "menu-actions": {
+        "speaker": "pactl set-default-sink 413",
+        "airpods": "pactl set-default-sink 979"
+   },
   "on-click-right": "pavucontrol -t 3",
   "tooltip": true,
   "tooltip-format": "{icon} {desc} | {volume}%",

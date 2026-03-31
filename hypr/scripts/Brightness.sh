@@ -26,12 +26,6 @@ send_notification() {
     local brightness=$1
     local icon_path=$2
 
-    notify-send -e \
-        -h string:x-canonical-private-synchronous:brightness_notif \
-        -h int:value:"$brightness" \
-        -u low \
-        -i "$icon_path" \
-        "Screen" "Brightness: ${brightness}%"
 }
 
 # Change brightness and notify

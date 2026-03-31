@@ -22,15 +22,15 @@
     "custom/weather"
   ],
   "modules-right": [
-    "clipboard",
-    "mpd",
-    "idle_inhibitor",
+    "custom/wireguard",
+    //"mpd",
+    //"idle_inhibitor",
     "pulseaudio",
     "pulseaudio#microphone",   
     "network",
-    "cpu",
-    "memory",
-    "temperature",
+    //"cpu",
+    //"memory",
+    //"temperature",
     //"custom/fan",
     "backlight",
     "hyprland/language",
@@ -38,6 +38,7 @@
     "battery",
    // "clock",
     "tray",
+    "custom/clipboard",
     "custom/power"
   ],
   // Modules configuration
@@ -192,14 +193,9 @@
     }
   },
   "custom/clipboard": {
-    "format": "🄯",
+    "format": " 󰅇 ",
     "interval": "once",
     "return-type": "json",
-    "on-click": "swaymsg -q exec '$clipboard'; pkill -RTMIN+9 waybar",
-    "on-click-right": "swaymsg -q exec '$clipboard-del'; pkill -RTMIN+9 waybar",
-    "on-click-middle": "swaymsg -q exec '$clipboard-del-all'",
-    "exec": "printf '{\"tooltip\":\"%s\"}' $(cliphist list | wc -l)",
-    "exec-if": "[ -x \"$(command -v cliphist)\" ] && [ $(cliphist list | wc -l) -gt 0 ]",
-    "signal": 9
+    "on-click": "$HOME/.config/hypr/scripts/ClipManager.sh",
   },
 }

@@ -25,9 +25,6 @@ get_icon() {
 	fi
 }
 # Notify
-notify_user() {
-	notify-send -e -h string:x-canonical-private-synchronous:brightness_notif -h int:value:$current -h boolean:SWAYNC_BYPASS_DND:true -u low -i "$icon" "Keyboard" "Brightness:$current%"
-}
 
 # Change brightness
 change_kbd_backlight() {

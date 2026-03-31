@@ -4,7 +4,7 @@
 
 # Variables
 rofi_theme="$HOME/.config/rofi/config-clipboard.rasi"
-msg='👀 **note**  CTRL DEL = cliphist del (entry)   or   ALT DEL - cliphist wipe (all)'
+msg='CTRL DEL = cliphist del (entry)   or   ALT DEL - cliphist wipe (all)'
 # Actions:
 # CTRL Del to delete an entry
 # ALT Del to wipe clipboard contents
@@ -20,7 +20,7 @@ while true; do
             -kb-custom-1 "Control-Delete" \
             -kb-custom-2 "Alt-Delete" \
             -config $rofi_theme < <(cliphist list) \
-			-mesg "$msg" 
+			-mesg "$msg"
     )
 
     case "$?" in

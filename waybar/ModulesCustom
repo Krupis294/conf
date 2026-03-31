@@ -17,6 +17,12 @@
 	"tooltip": true,
 },
 
+"custom/wireguard": {
+    "exec": "~/.config/waybar/scripts/wg-status.sh",
+    "interval": 5,
+    "return-type": "json",
+},
+
 "custom/hyprpicker": {
 	"format": "",
 	"on-click": "hyprpicker | wl-copy",

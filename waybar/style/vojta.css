@@ -279,7 +279,6 @@ label:focus {
   background: #00b093;
   color: #740864;
   padding: 0 5px 0 5px;
-  /*margin: 0 5px;*/
   min-width: 16px;
 }
 
@@ -338,12 +337,31 @@ menuitem {
   border-radius: 0;
 
 }
+#custom-clipboard{
+  font-size: 14px;
+  background: #191970;
+  padding: 0 3px 0 0;
+}
+
 #custom-power{
-  margin-right: 5px;
+margin: 0 5px 0 0;
+font-size: 12px;
+padding: 0 3px 0 0;
+background: #b22222;
 }
 
 #pulseaudio.microphone {
   padding: 0 10px;
   background-color: #f1c40f;
   color: #000000;
+}
+
+#custom-wireguard {
+    font-size: 18px;
+    padding: 0 8px;
+}
+
+#custom-wireguard.connected {
+    background-color: #00ff88;
+    color: #000000;
 }
