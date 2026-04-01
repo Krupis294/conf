@@ -342,8 +342,8 @@
 	"menu": "on-click",
         "menu-file": "$HOME/.config/waybar/speaker.xml",
         "menu-actions": {
-	        "speaker": "pactl set-default-sink 413",
-		"airpods": "pactl set-default-sink 979"
+	        "speaker": "pactl set-default-sink $(pamixer --list-sinks | grep Speaker | awk -F' ' '{print $1}')",
+		"airpods": "pactl set-default-sink $(pamixer --list-sinks | grep AirPods | awk -F' ' '{print $1}')"
 	},
 
 	"on-click-right": "pavucontrol -t 3",
@@ -371,8 +371,8 @@
    "menu": "on-click",
     "menu-file": "$HOME/.config/waybar/speaker.xml",
     "menu-actions": {
-        "speaker": "pactl set-default-sink 413",
-        "airpods": "pactl set-default-sink 979"
+        "speaker": "pactl set-default-sink $(pamixer --list-sinks | grep Speaker | awk -F' ' '{print $1}')",
+	"airpods": "pactl set-default-sink $(pamixer --list-sinks | grep AirPods | awk -F' ' '{print $1}')"
    },
   "on-click-right": "pavucontrol -t 3",
   "tooltip": true,
