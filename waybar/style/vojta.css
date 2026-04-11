@@ -365,3 +365,7 @@ background: #b22222;
     background-color: #00ff88;
     color: #000000;
 }
+
+*:hover {
+  background-image: image(rgba(0,0,0,0.15));
+}

@@ -19,6 +19,7 @@
 
 "custom/wireguard": {
     "exec": "~/.config/waybar/scripts/wg-status.sh",
+    "on-click": "~/.config/waybar/scripts/wg-update.sh",
     "interval": 5,
     "return-type": "json",
 },

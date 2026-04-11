@@ -29,5 +29,19 @@
 			</child>
 		</object>
     </child>
+		<child>
+		<object class="GtkImageMenuItem" id="hdmi">
+			<child>
+				<object class="GtkLabel">
+				 <property name="label">HDMI</property>
+			 </object>
+			</child>
+			<child>
+			 <object class="GtkImage">
+				<property name="icon-name">hdmi</property>
+			 </object>
+			</child>
+		</object>
+    </child>
   </object>
 </interface>
