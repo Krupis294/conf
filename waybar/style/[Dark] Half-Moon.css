@@ -12,6 +12,14 @@
     font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 }
 
+#custom-nordvpn{
+    color: #a6e3a1;
+        background: #0F1419;
+        border-radius: 50px 50px;
+        margin: 5px;
+	padding: 5px 15px;
+
+}
 
 window#waybar {
   background-color: rgba(26,27,38,0);
@@ -141,7 +149,7 @@ color: #F3F4F5;
 }
 
 #bluetooth {
-	color: blue;
+	color: #40a3ff;
 	background: #0F1419;
 	border-radius: 50px 50px;
 	margin: 5px;
@@ -169,7 +177,7 @@ color: #F3F4F5;
 
 #backlight,
 #battery {
-	color: #F07178;
+	color: #A3FF00;
 	background: #0F1419;
 	border-radius: 50px 50px;
 	margin: 5px;
@@ -318,4 +326,65 @@ color: #F3F4F5;
 	min-height: 10px;
 	border-radius: 5px;
 	background-color: purple;
+}
+#custom-clipboard{
+
+  font-size: 14px;   
+  background: #0F1419;
+  color: #615eff;
+  border-radius: 50px 50px;
+  margin: 5px;
+  padding: 2px 15px;
+}
+
+#power-profiles-daemon.performance {
+  color: #f53c3c;
+}
+
+#power-profiles-daemon.balanced {
+  color: #2980b9;
+}
+
+#power-profiles-daemon.power-saver {
+  color: #2ecc71;
+}
+
+
+#language{
+	background: #0F1419;
+        border-radius: 50px 50px;
+	margin: 5px;
+        padding: 2px 15px;
+}
+#custom-wireguard{
+	color: #ffffff;
+        background: #0F1419;
+        border-radius: 50px 50px;
+        margin: 5px;
+        padding: 2px 15px;
+}
+#custom-wireguard.connected { 
+    background: #008040;
+}
+*:hover{
+	background: linear-gradient(45deg, #59C2FF, #D2A6FF);
+	opacity: 0.6;
+	transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#custom-claude {
+	color: #D2A6FF;
+	background: #0F1419;
+	border-radius: 50px 50px;
+	margin: 5px;
+	padding: 2px 15px;
+}
+#custom-claude.warning {
+	color: #E6B673;
+}
+#custom-claude.critical {
+	color: #F07178;
+}
+#custom-claude.error {
+	color: #686868;
 }

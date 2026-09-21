@@ -17,6 +17,21 @@
 	"tooltip": true,
 },
 
+"custom/clipboard": {
+    "format": " 󰅇 ",
+    "interval": "once",
+    "return-type": "json",
+    "on-click": "$HOME/.config/hypr/scripts/ClipManager.sh",
+},
+"custom/nordvpn": {
+    "exec": "~/.config/waybar/scripts/nordvpn-status.sh",
+    "return-type": "json",
+    "interval": 5,
+    "on-click": "nordvpn connect",
+    "on-click-right": "nordvpn disconnect",
+    "tooltip": true
+},
+
 "custom/wireguard": {
     "exec": "~/.config/waybar/scripts/wg-status.sh",
     "on-click": "~/.config/waybar/scripts/wg-update.sh",
