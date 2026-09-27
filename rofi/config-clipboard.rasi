@@ -18,13 +18,13 @@ mainbox {
 /* ---- Entry ---- */
 entry {
   width: inherit;
-  placeholder: " 📋 Search";
+  placeholder: " 📋 Search ";
 }
 
 /* ---- Listview ---- */
 listview {
   columns: 1;
-  lines: 14;
+  lines: 10;
   fixed-height: true;
   spacing: 6px;
   cycle: true;
