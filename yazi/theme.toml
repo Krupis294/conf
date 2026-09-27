@@ -1,0 +1,7 @@
+#:schema https://yazi-rs.github.io/schemas/theme.json
+
+# Flavor lives in flavors/theme-dark.yazi (see its README).
+# Keep this file to `[flavor]` only, unless you want to override single styles.
+[flavor]
+dark  = "theme-dark"
+light = "theme-dark"
